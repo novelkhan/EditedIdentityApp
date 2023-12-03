@@ -357,7 +357,7 @@ namespace Api.Controllers
             token = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
             var url = $"{_config["JWT:ClientUrl"]}/{_config["Email:ConfirmEmailPath"]}?token={token}&email={user.Email}";
 
-            var body = $"<p>Hello: {user.FirstName} {user.LastName}</p>" +
+            var body = $"<p>Hello, {user.FirstName} {user.LastName}</p>" +
                 "<p>Please confirm your email address by clicking on the following link.</p>" +
                 $"<p><a href=\"{url}\">Click here</a></p>" +
                 "<p>Thank you,</p>" +

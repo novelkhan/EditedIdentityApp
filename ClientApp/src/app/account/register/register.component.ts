@@ -95,7 +95,7 @@ export class RegisterComponent implements OnInit {
     (window as any).onGoogleLibraryLoad = () => {
       // @ts-ignore
       google.accounts.id.initialize({
-        client_id: '473473414260-dvfr4pp0jaipd3h86i283q3te3c6kp8m.apps.googleusercontent.com',
+        client_id: '424298137152-gseo2540bovgqua6q34healtmar8at5o.apps.googleusercontent.com',
         callback: this.googleCallBack.bind(this),
         auto_select: false,
         cancel_on_tap_outside: true
